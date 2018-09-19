@@ -99,6 +99,11 @@ class App extends Component {
             onClick={this.handleAddImageClick}>Add Image</button>
         </div>
         <div>
+          <p>Add multiple images and double click on the images to rotate them.</p>
+          <p>The double clicks often trigger a select action outside of the Konva stage in Chrome and lead to faulty behavior.</p> 
+          <p>This does not appear to happen in Firefox or Safari.</p>
+        </div>
+        <div>
           <Stage width={1000} height={500}>
             <Layer name={"objectLayer"}>
               {rectObjects}
